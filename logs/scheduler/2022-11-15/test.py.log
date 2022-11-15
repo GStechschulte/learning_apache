@@ -1,0 +1,724 @@
+[2022-11-15T20:26:04.430+0000] {processor.py:156} INFO - Started process (PID=283) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:26:04.431+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:26:04.432+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:26:04.432+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:26:04.927+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:26:04.925+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:26:04.928+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:26:04.943+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.516 seconds
+[2022-11-15T20:26:35.353+0000] {processor.py:156} INFO - Started process (PID=312) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:26:35.355+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:26:35.357+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:26:35.356+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:26:35.499+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:26:35.497+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:26:35.500+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:26:35.514+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.168 seconds
+[2022-11-15T20:27:05.688+0000] {processor.py:156} INFO - Started process (PID=342) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:27:05.690+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:27:05.692+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:27:05.692+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:27:05.840+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:27:05.838+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:27:05.841+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:27:05.856+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.174 seconds
+[2022-11-15T20:27:36.237+0000] {processor.py:156} INFO - Started process (PID=371) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:27:36.238+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:27:36.239+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:27:36.239+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:27:36.423+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:27:36.421+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:27:36.425+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:27:36.438+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.203 seconds
+[2022-11-15T20:28:06.656+0000] {processor.py:156} INFO - Started process (PID=392) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:28:06.660+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:28:06.662+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:28:06.662+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:28:06.801+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:28:06.799+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:28:06.802+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:28:06.816+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.165 seconds
+[2022-11-15T20:28:37.116+0000] {processor.py:156} INFO - Started process (PID=420) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:28:37.118+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:28:37.119+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:28:37.119+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:28:37.259+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:28:37.257+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:28:37.260+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:28:37.275+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.165 seconds
+[2022-11-15T20:29:07.489+0000] {processor.py:156} INFO - Started process (PID=451) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:29:07.492+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:29:07.493+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:29:07.493+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:29:07.648+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:29:07.646+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:29:07.649+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:29:07.665+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.180 seconds
+[2022-11-15T20:29:37.850+0000] {processor.py:156} INFO - Started process (PID=480) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:29:37.852+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:29:37.853+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:29:37.853+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:29:38.049+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:29:38.047+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:29:38.051+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:29:38.076+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.231 seconds
+[2022-11-15T20:30:08.216+0000] {processor.py:156} INFO - Started process (PID=509) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:30:08.219+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:30:08.220+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:30:08.220+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:30:08.366+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:30:08.364+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:30:08.366+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:30:08.380+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.170 seconds
+[2022-11-15T20:30:38.705+0000] {processor.py:156} INFO - Started process (PID=538) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:30:38.705+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:30:38.706+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:30:38.706+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:30:38.871+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:30:38.868+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:30:38.872+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:30:38.889+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.186 seconds
+[2022-11-15T20:31:09.048+0000] {processor.py:156} INFO - Started process (PID=558) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:31:09.051+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:31:09.052+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:31:09.052+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:31:09.202+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:31:09.199+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:31:09.203+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:31:09.219+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.176 seconds
+[2022-11-15T20:31:39.575+0000] {processor.py:156} INFO - Started process (PID=586) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:31:39.578+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:31:39.579+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:31:39.579+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:31:39.714+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:31:39.712+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:31:39.715+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:31:39.728+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.158 seconds
+[2022-11-15T20:32:09.980+0000] {processor.py:156} INFO - Started process (PID=615) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:32:09.984+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:32:09.987+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:32:09.986+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:32:10.132+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:32:10.131+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:32:10.134+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:32:10.147+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.174 seconds
+[2022-11-15T20:32:40.415+0000] {processor.py:156} INFO - Started process (PID=644) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:32:40.418+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:32:40.420+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:32:40.420+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:32:40.558+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:32:40.556+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:32:40.559+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:32:40.573+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.163 seconds
+[2022-11-15T20:33:10.765+0000] {processor.py:156} INFO - Started process (PID=674) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:33:10.768+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:33:10.769+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:33:10.769+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:33:10.913+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:33:10.911+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:33:10.914+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:33:10.929+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.170 seconds
+[2022-11-15T20:33:41.174+0000] {processor.py:156} INFO - Started process (PID=703) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:33:41.176+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:33:41.176+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:33:41.176+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:33:41.323+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:33:41.320+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:33:41.324+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:33:41.343+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.171 seconds
+[2022-11-15T20:34:11.507+0000] {processor.py:156} INFO - Started process (PID=723) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:34:11.509+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:34:11.510+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:34:11.510+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:34:11.651+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:34:11.649+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:34:11.652+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:34:11.667+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.164 seconds
+[2022-11-15T20:34:41.951+0000] {processor.py:156} INFO - Started process (PID=752) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:34:41.955+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:34:41.958+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:34:41.958+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:34:42.150+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:34:42.147+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:34:42.150+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:34:42.167+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.225 seconds
+[2022-11-15T20:35:12.267+0000] {processor.py:156} INFO - Started process (PID=781) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:35:12.270+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:35:12.272+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:35:12.272+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:35:12.412+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:35:12.410+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:35:12.413+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:35:12.426+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.166 seconds
+[2022-11-15T20:35:42.714+0000] {processor.py:156} INFO - Started process (PID=811) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:35:42.717+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:35:42.718+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:35:42.718+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:35:42.857+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:35:42.855+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:35:42.858+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:35:42.872+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.162 seconds
+[2022-11-15T20:36:13.011+0000] {processor.py:156} INFO - Started process (PID=841) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:36:13.013+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:36:13.015+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:36:13.015+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:36:13.171+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:36:13.169+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:36:13.171+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:36:13.185+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.181 seconds
+[2022-11-15T20:36:43.405+0000] {processor.py:156} INFO - Started process (PID=869) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:36:43.407+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:36:43.408+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:36:43.408+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:36:43.569+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:36:43.567+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:36:43.570+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:36:43.586+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.184 seconds
+[2022-11-15T20:37:13.712+0000] {processor.py:156} INFO - Started process (PID=891) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:37:13.713+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:37:13.714+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:37:13.714+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:37:13.853+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:37:13.851+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:37:13.854+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:37:13.867+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.161 seconds
+[2022-11-15T20:37:44.197+0000] {processor.py:156} INFO - Started process (PID=920) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:37:44.199+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:37:44.200+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:37:44.200+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:37:44.340+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:37:44.338+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:37:44.341+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:37:44.355+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.161 seconds
+[2022-11-15T20:38:14.495+0000] {processor.py:156} INFO - Started process (PID=949) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:38:14.496+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:38:14.498+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:38:14.497+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:38:14.631+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:38:14.629+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 40, in <module>
+    final_df = drop_column(read_csv())
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 277, in __call__
+    **self.kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/python.py", line 58, in __init__
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/decorators/base.py", line 180, in __init__
+    inspect.signature(python_callable).bind(*op_args, **op_kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 3015, in bind
+    return args[0]._bind(args[1:], kwargs)
+  File "/usr/local/lib/python3.7/inspect.py", line 2930, in _bind
+    raise TypeError(msg) from None
+TypeError: missing a required argument: 'path'
+[2022-11-15T20:38:14.632+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:38:14.645+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.153 seconds
+[2022-11-15T20:49:23.368+0000] {processor.py:156} INFO - Started process (PID=34) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:49:23.369+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:49:23.370+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:49:23.370+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:49:23.399+0000] {processor.py:768} INFO - DAG(s) dict_keys(['airflow_tutorial_v01']) retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:49:23.514+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:49:23.514+0000] {manager.py:508} INFO - Created Permission View: can read on DAG:airflow_tutorial_v01
+[2022-11-15T20:49:23.521+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:49:23.521+0000] {manager.py:508} INFO - Created Permission View: can edit on DAG:airflow_tutorial_v01
+[2022-11-15T20:49:23.526+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:49:23.525+0000] {manager.py:508} INFO - Created Permission View: can delete on DAG:airflow_tutorial_v01
+[2022-11-15T20:49:23.527+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:49:23.527+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-11-15T20:49:23.537+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:49:23.537+0000] {dag.py:2594} INFO - Creating ORM DAG for airflow_tutorial_v01
+[2022-11-15T20:49:23.550+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:49:23.550+0000] {dag.py:3328} INFO - Setting next_dagrun for airflow_tutorial_v01 to 2017-06-01T00:00:00+00:00, run_after=2017-06-01T01:00:00+00:00
+[2022-11-15T20:49:23.564+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.198 seconds
+[2022-11-15T20:49:53.617+0000] {processor.py:156} INFO - Started process (PID=61) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:49:53.618+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:49:53.619+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:49:53.619+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:49:53.637+0000] {processor.py:768} INFO - DAG(s) dict_keys(['airflow_tutorial_v01']) retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:49:53.672+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:49:53.672+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-11-15T20:49:53.688+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:49:53.688+0000] {dag.py:3328} INFO - Setting next_dagrun for airflow_tutorial_v01 to 2017-06-01T00:00:00+00:00, run_after=2017-06-01T01:00:00+00:00
+[2022-11-15T20:49:53.702+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.088 seconds
+[2022-11-15T20:50:23.910+0000] {processor.py:156} INFO - Started process (PID=124) to work on /opt/airflow/dags/test.py
+[2022-11-15T20:50:23.912+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2022-11-15T20:50:23.914+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:50:23.914+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2022-11-15T20:50:23.942+0000] {processor.py:768} INFO - DAG(s) dict_keys(['airflow_tutorial_v01']) retrieved from /opt/airflow/dags/test.py
+[2022-11-15T20:50:23.983+0000] {logging_mixin.py:117} INFO - [2022-11-15T20:50:23.983+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-11-15T20:50:24.016+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/test.py took 0.115 seconds
