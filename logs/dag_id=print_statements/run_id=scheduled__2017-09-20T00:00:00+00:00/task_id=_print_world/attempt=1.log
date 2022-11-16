@@ -1,0 +1,25 @@
+[2022-11-16T05:55:44.271+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: print_statements._print_world scheduled__2017-09-20T00:00:00+00:00 [queued]>
+[2022-11-16T05:55:44.289+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: print_statements._print_world scheduled__2017-09-20T00:00:00+00:00 [queued]>
+[2022-11-16T05:55:44.291+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T05:55:44.291+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2022-11-16T05:55:44.292+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T05:55:44.312+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): _print_world> on 2017-09-20 00:00:00+00:00
+[2022-11-16T05:55:44.316+0000] {standard_task_runner.py:54} INFO - Started process 814 to run task
+[2022-11-16T05:55:44.335+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'print_statements', '_print_world', 'scheduled__2017-09-20T00:00:00+00:00', '--job-id', '225', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpxfwrk3xz']
+[2022-11-16T05:55:44.341+0000] {standard_task_runner.py:83} INFO - Job 225: Subtask _print_world
+[2022-11-16T05:55:44.343+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/test.py
+[2022-11-16T05:55:44.732+0000] {task_command.py:384} INFO - Running <TaskInstance: print_statements._print_world scheduled__2017-09-20T00:00:00+00:00 [running]> on host 999a890337df
+[2022-11-16T05:55:44.857+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=me
+AIRFLOW_CTX_DAG_ID=print_statements
+AIRFLOW_CTX_TASK_ID=_print_world
+AIRFLOW_CTX_EXECUTION_DATE=2017-09-20T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2017-09-20T00:00:00+00:00
+[2022-11-16T05:55:44.858+0000] {logging_mixin.py:117} INFO - hello world
+[2022-11-16T05:55:44.859+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-16T05:55:44.881+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=print_statements, task_id=_print_world, execution_date=20170920T000000, start_date=20221116T055544, end_date=20221116T055544
+[2022-11-16T05:55:44.966+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-16T05:55:44.993+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

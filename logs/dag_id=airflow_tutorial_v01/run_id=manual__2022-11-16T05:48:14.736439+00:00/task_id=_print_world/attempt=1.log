@@ -1,0 +1,25 @@
+[2022-11-16T05:48:15.844+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: airflow_tutorial_v01._print_world manual__2022-11-16T05:48:14.736439+00:00 [queued]>
+[2022-11-16T05:48:15.868+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: airflow_tutorial_v01._print_world manual__2022-11-16T05:48:14.736439+00:00 [queued]>
+[2022-11-16T05:48:15.870+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T05:48:15.871+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2022-11-16T05:48:15.872+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-16T05:48:15.904+0000] {taskinstance.py:1383} INFO - Executing <Task(_PythonDecoratedOperator): _print_world> on 2022-11-16 05:48:14.736439+00:00
+[2022-11-16T05:48:15.912+0000] {standard_task_runner.py:54} INFO - Started process 95 to run task
+[2022-11-16T05:48:15.934+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', '***_tutorial_v01', '_print_world', 'manual__2022-11-16T05:48:14.736439+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpxnjjsdhj']
+[2022-11-16T05:48:15.935+0000] {standard_task_runner.py:83} INFO - Job 3: Subtask _print_world
+[2022-11-16T05:48:15.937+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/test.py
+[2022-11-16T05:48:17.997+0000] {task_command.py:384} INFO - Running <TaskInstance: airflow_tutorial_v01._print_world manual__2022-11-16T05:48:14.736439+00:00 [running]> on host 235c109aee07
+[2022-11-16T05:48:18.190+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=me
+AIRFLOW_CTX_DAG_ID=***_tutorial_v01
+AIRFLOW_CTX_TASK_ID=_print_world
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-16T05:48:14.736439+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-16T05:48:14.736439+00:00
+[2022-11-16T05:48:18.191+0000] {logging_mixin.py:117} INFO - hello world
+[2022-11-16T05:48:18.192+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-11-16T05:48:18.210+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=***_tutorial_v01, task_id=_print_world, execution_date=20221116T054814, start_date=20221116T054815, end_date=20221116T054818
+[2022-11-16T05:48:18.313+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-11-16T05:48:18.363+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
